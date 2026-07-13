@@ -4,7 +4,7 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta content="Mahasti Yuanita's portfolio for Cornell Global Hubs, featuring documented work in international coordination, data management, virtual events, research, communications, Mailchimp, and grant operations." name="description"/>
+<meta content="Mahasti Yuanita portfolio for Cornell Global Hubs, featuring public and academic samples in data management, data analysis, research, English writing, communications, and virtual-event operations." name="description"/>
 <meta content="Mahasti Yuanita" name="author"/>
 <meta content="noindex, nofollow" name="robots"/>
 <meta content="#6f1d2b" name="theme-color"/>
@@ -200,6 +200,56 @@ img, svg { max-width: 100%; display: block; }
 .fit-card ul { margin: 24px 0 0; padding: 0; list-style: none; }
 .fit-card li { position: relative; padding: 8px 0 8px 21px; border-top: 1px solid var(--line); font-size: .88rem; }
 .fit-card li::before { content: "↗"; position: absolute; left: 0; color: var(--wine); }
+.task-order-note {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 24px;
+  align-items: center;
+  margin: -24px 0 34px;
+  padding: 22px 24px;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: var(--cream);
+}
+.task-order-note p { margin: 0; color: var(--muted); }
+.task-order-note strong { color: var(--wine); }
+.task-order-note span {
+  white-space: nowrap;
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: #fff;
+  color: var(--wine);
+  border: 1px solid rgba(111,29,43,.18);
+  font-size: .72rem;
+  font-weight: 800;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+}
+.event-availability {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 28px;
+  align-items: center;
+  margin: 0 0 34px;
+  padding: 28px 30px;
+  border-radius: 20px;
+  color: #fff;
+  background: var(--wine-dark);
+  box-shadow: 0 18px 45px rgba(42,22,24,.12);
+}
+.event-availability h3 { margin: 7px 0 8px; font-family: var(--serif); font-size: 1.75rem; font-weight: 400; }
+.event-availability p { margin: 0; max-width: 760px; color: rgba(255,255,255,.72); }
+.availability-label { color: var(--gold); font-size: .72rem; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; }
+.event-availability > strong {
+  padding: 10px 14px;
+  border: 1px solid rgba(255,255,255,.22);
+  border-radius: 999px;
+  color: var(--gold);
+  font-size: .74rem;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
 
 .experience-grid { display: grid; grid-template-columns: .8fr 1.2fr; gap: 80px; align-items: start; }
 .experience-grid .section-heading { position: sticky; top: 130px; }
@@ -401,6 +451,17 @@ img, svg { max-width: 100%; display: block; }
 }
 
 /* Updated visual work-sample section */
+.individual-contribution {
+  margin: 18px 0 0;
+  padding: 15px 17px;
+  border-left: 4px solid var(--wine);
+  border-radius: 0 12px 12px 0;
+  background: rgba(179, 27, 27, .06);
+  color: var(--muted);
+  line-height: 1.65;
+}
+.individual-contribution strong { color: var(--ink); }
+
 .portfolio-intro-note {
   display: grid; grid-template-columns: 1fr auto; gap: 24px; align-items: center;
   margin: -10px 0 38px; padding: 22px 24px; border: 1px solid rgba(111,29,43,.16);
@@ -443,8 +504,12 @@ img, svg { max-width: 100%; display: block; }
 .rjef-visual { position: relative; padding: 26px; background: #f0ece5; }
 .rjef-visual img { width: 100%; height: 100%; max-height: 720px; object-fit: contain; border-radius: 14px; box-shadow: 0 16px 46px rgba(39,29,24,.15); }
 .image-caption { margin: 14px 0 0; color: var(--muted); font-size: .78rem; text-align: center; }
-.publication-status { margin-top: 24px; padding: 16px 18px; border-left: 4px solid var(--wine); background: var(--cream); color: var(--muted); font-size: .88rem; }
-.publication-status strong { display: block; color: var(--ink); margin-bottom: 4px; }
+.publication-status { margin-top: 24px; padding: 18px 20px; border-left: 4px solid var(--wine); background: var(--cream); color: var(--muted); font-size: .88rem; }
+.publication-status .publication-label { display: block; margin-bottom: 7px; color: var(--wine); font-size: .72rem; font-weight: 800; letter-spacing: .11em; text-transform: uppercase; }
+.publication-status strong { display: block; color: var(--ink); margin-bottom: 6px; font-size: 1rem; line-height: 1.4; }
+.publication-status p { margin: 0 0 14px; }
+.publication-status a { display: inline-flex; align-items: center; min-height: 40px; padding: 0 14px; border-radius: 999px; background: var(--wine); color: #fff; font-weight: 750; text-decoration: none; transition: transform .2s ease, box-shadow .2s ease; }
+.publication-status a:hover { transform: translateY(-2px); box-shadow: 0 10px 24px rgba(108, 27, 50, .18); }
 .workflow-panel { padding: 36px; background: linear-gradient(155deg, #351019, #6f1d2b); color: #fff; }
 .workflow-title { margin: 0 0 24px; font-family: var(--serif); font-size: 2rem; font-weight: 400; }
 .workflow-steps { display: grid; gap: 10px; }
@@ -477,6 +542,8 @@ img, svg { max-width: 100%; display: block; }
   .carousel-button { width: 38px; height: 38px; }
   .portfolio-intro-note { grid-template-columns: 1fr; }
   .portfolio-intro-note span { justify-self: start; }
+  .task-order-note, .event-availability { grid-template-columns: 1fr; }
+  .task-order-note span, .event-availability > strong { justify-self: start; }
   .private-sample { grid-template-columns: 1fr; }
   .workflow-panel { padding: 26px 20px; }
 }
@@ -567,69 +634,84 @@ img, svg { max-width: 100%; display: block; }
 <section class="section section-light" id="fit">
 <div class="container">
 <div class="section-heading reveal">
-<p class="eyebrow">01 · Role alignment</p>
-<h2>What I would bring to Global Hubs</h2>
-<p>My experience aligns with the practical work discussed in the interview: accurate administration, concise research, virtual collaboration, program operations, and dependable follow-through.</p>
+<p class="eyebrow">01 · Task fit</p>
+<h2>Skills and interests, in priority order</h2>
+<p>I am comfortable supporting all seven areas discussed. Based on my experience and the work I most enjoy, I would rank my strongest skills and interests in the following order.</p>
+</div>
+<div class="task-order-note reveal"><p><strong>This is a relative preference order—not a limit on what I can support.</strong> I am willing to contribute across all seven areas as priorities shift within the Global Hubs team.</p><span>All areas supported</span></div>
+<div class="event-availability reveal">
+<div><span class="availability-label">Upcoming virtual event</span><h3>Available October 22 and October 23, 2026</h3><p>I am available from 8:00–10:00 a.m. on both days, including time before and afterward for setup, technical checks, and debriefing.</p></div>
+<strong>Both dates confirmed</strong>
 </div>
 <div class="fit-grid">
 <article class="fit-card reveal">
-<span class="card-number">01</span>
+<span class="card-number">01 · Highest priority</span>
 <h3>Data entry &amp; management</h3>
-<p>Government datasets, participant records, credentials, contact lists, and Excel-based tracking.</p>
+<p>My strongest area: maintaining accurate records, cleaning entries, organizing shared data, and keeping administrative trackers current.</p>
 <ul>
-<li>Validation and standardization</li>
-<li>Deduplication and status tracking</li>
-<li>Confidentiality and access discipline</li>
+<li>Excel and Box-based tracking systems</li>
+<li>Validation, standardization, and deduplication</li>
+<li>Responsible data handling and access control</li>
 </ul>
 </article>
 <article class="fit-card reveal">
 <span class="card-number">02</span>
-<h3>Research &amp; briefings</h3>
-<p>Policy briefs, analytical summaries, government publications, and Cornell policy coursework.</p>
+<h3>Data analysis</h3>
+<p>Turning structured data into clear findings, concise summaries, and decision-ready information.</p>
 <ul>
-<li>Fast background research</li>
-<li>Source-aware synthesis</li>
-<li>Audience-appropriate writing</li>
+<li>Excel, Stata, EViews, and MATLAB</li>
+<li>Trend interpretation and quality checks</li>
+<li>Tables, charts, and analytical summaries</li>
 </ul>
 </article>
 <article class="fit-card reveal">
 <span class="card-number">03</span>
-<h3>Virtual events</h3>
-<p>Zoom Meetings, Zoom Webinars, and Webex hosting for international and senior-level engagements.</p>
+<h3>Researching &amp; developing briefings</h3>
+<p>Rapid background research and synthesis for policy, international cooperation, and senior-level meetings.</p>
 <ul>
-<li>Roles, permissions, and run of show</li>
-<li>Breakout-room coordination</li>
-<li>Co-host support and follow-up</li>
+<li>Source verification and concise synthesis</li>
+<li>G20, OECD, IMF, and policy contexts</li>
+<li>Executive-ready briefing structure</li>
 </ul>
 </article>
 <article class="fit-card reveal">
 <span class="card-number">04</span>
-<h3>Communications &amp; editing</h3>
-<p>Current Cornell communications work and prior public-facing government content production.</p>
+<h3>Writing articles in English</h3>
+<p>Published and reviewed English-language communications, policy writing, and public-facing institutional content.</p>
 <ul>
-<li>Short-form copy and newsletters</li>
-<li>Editing and presentation design</li>
-<li>Mailchimp list maintenance</li>
+<li>Cornell Chronicle press release</li>
+<li>Policy briefs and analytical articles</li>
+<li>Editing for clarity, tone, and audience</li>
 </ul>
 </article>
 <article class="fit-card reveal">
 <span class="card-number">05</span>
-<h3>Grant operations</h3>
-<p>Experience with multi-stage programs, reporting, reviewer coordination, and mass-email workflows.</p>
+<h3>Virtual meeting design</h3>
+<p>Designing focused virtual sessions that make efficient use of limited time and support meaningful participation.</p>
 <ul>
-<li>Process mapping and trackers</li>
-<li>Templates and reminders</li>
-<li>Monitoring and close-out</li>
+<li>Goals, agendas, and run-of-shows</li>
+<li>Time-zone and participant planning</li>
+<li>Breakout structure and follow-up</li>
 </ul>
 </article>
 <article class="fit-card reveal">
 <span class="card-number">06</span>
-<h3>Flexible special projects</h3>
-<p>Comfortable supporting a small team where priorities shift and many assignments are short-cycle.</p>
+<h3>Zoom event production &amp; hosting</h3>
+<p>Hands-on support for Zoom Meetings, Zoom Webinars, and Webex events involving international participants.</p>
 <ul>
-<li>Clarify needs early</li>
-<li>Communicate visible progress</li>
-<li>Deliver accurately and on time</li>
+<li>Host, co-host, and panelist permissions</li>
+<li>Breakout-room management</li>
+<li>Technical rehearsal and live troubleshooting</li>
+</ul>
+</article>
+<article class="fit-card reveal">
+<span class="card-number">07</span>
+<h3>In-person events &amp; visitor hosting</h3>
+<p>Available and willing to support on-campus events, visiting delegations, and practical hospitality needs.</p>
+<ul>
+<li>Arrival and room coordination</li>
+<li>Materials, schedules, and logistics</li>
+<li>Professional cross-cultural hospitality</li>
 </ul>
 </article>
 </div>
@@ -658,7 +740,7 @@ img, svg { max-width: 100%; display: block; }
 <p class="timeline-org">Coordinating Ministry for Economic Affairs, Indonesia</p>
 <h3>Economic Analyst → Policy Analyst</h3>
 <p>Supported policy coordination connected to the G20, OECD, IMF, and World Bank; gathered inputs across ministries; prepared briefings and presentation decks; and supported international engagements across time zones.</p>
-<div class="tag-row"><span>Cross-ministry coordination</span><span>Senior briefings</span><span>Confidential information</span></div>
+<div class="tag-row"><span>Cross-ministry coordination</span><span>Senior briefings</span><span>Accurate records and source control</span></div>
 </div>
 </article>
 <article class="timeline-item reveal">
@@ -692,7 +774,7 @@ img, svg { max-width: 100%; display: block; }
 <div class="capability-stack">
 <article class="feature-panel reveal">
 <div class="feature-copy">
-<span class="feature-kicker">Data and confidentiality</span>
+<span class="feature-kicker">Data quality and records management</span>
 <h3>Reduce errors before they become problems.</h3>
 <p>I genuinely enjoy structured, repetitive work when accuracy matters. My experience includes data entry, cleaning, standardization, validation, attendance records, contact lists, and thousands of delegate credentials.</p>
 <div class="mini-grid">
@@ -747,9 +829,9 @@ img, svg { max-width: 100%; display: block; }
 <div class="section-heading reveal">
 <p class="eyebrow">04 · Portfolio evidence</p>
 <h2>Selected work, with supporting samples</h2>
-<p>The portfolio combines public work, individual academic projects, current Cornell communications, and carefully described confidential experience. Swipe the document viewers or use the arrow buttons.</p>
+<p>The portfolio combines individual academic work, published professional writing, current Cornell communications, and public collaborative projects. Swipe the document viewers or use the arrow buttons.</p>
 </div>
-<div class="portfolio-intro-note reveal"><p><strong>Authorship and confidentiality are labeled clearly.</strong> Public files are available in the viewers below. Restricted government and G20 materials are described but are not embedded in this public-facing website.</p><span>Swipe enabled</span></div>
+<div class="portfolio-intro-note reveal"><p><strong>Authorship and individual contributions are labeled clearly. </strong>Every sample displayed here is public, academic, or specifically approved for sharing.</p><span>Swipe enabled</span></div>
 <div class="showcase-list">
 <article class="showcase-card reveal">
 <div class="showcase-grid">
@@ -794,13 +876,35 @@ img, svg { max-width: 100%; display: block; }
 </div>
 </article>
 <article class="showcase-card reveal">
+<div class="showcase-grid text-wide">
+<div class="showcase-copy">
+<p class="role-line">Individual academic writing and quantitative analysis · Independent work</p>
+<h3>The Transmission of Foreign Direct Investment in International Trade</h3>
+<p>A 10-page academic research paper examining whether foreign direct investment strengthens Indonesia's exports and whether manufacturing or services generates stronger trade outcomes. The study uses quarterly FDI, export, and output data from Q1 2010 through Q3 2024.</p>
+<ul><li>Developed the research questions, conceptual framework, literature review, and policy recommendations.</li><li>Compiled and analyzed economic data using VECM and ARDL models in EViews.</li><li>Translated quantitative findings into recommendations on manufacturing investment, export orientation, spillovers to domestic firms, and management of services-sector FDI.</li></ul>
+<div class="individual-contribution skill-alignment"><strong>Skills demonstrated:</strong> data analysis, research and briefing development, econometric interpretation, and English academic writing.</div><div class="individual-contribution"><strong>My individual contribution:</strong> Independently developed the research design, compiled and processed the data, conducted the econometric analysis, interpreted the results, created the figures and policy framework, and wrote the full paper in English.</div>
+<div class="sample-actions"><a class="button button-primary" href="Academic_Writing_FDI_Trade.pdf" target="_blank">Open full paper</a></div>
+<span class="swipe-hint">Swipe through all 10 pages</span>
+</div>
+<div class="showcase-visual"><div aria-label="FDI and international trade academic writing sample" class="document-carousel portrait" tabindex="0">
+<div class="document-stage">
+<button aria-label="Previous page" class="carousel-button prev" type="button">‹</button>
+<img alt="FDI and international trade academic writing sample" draggable="false" src="fdi-page-01.webp"/>
+<button aria-label="Next page" class="carousel-button next" type="button">›</button>
+</div>
+<div class="carousel-footer"><span class="carousel-caption"></span><span class="carousel-counter"></span></div>
+<script class="carousel-data" type="application/json">[{"src": "fdi-page-01.webp", "label": "Page 1"}, {"src": "fdi-page-02.webp", "label": "Page 2"}, {"src": "fdi-page-03.webp", "label": "Page 3"}, {"src": "fdi-page-04.webp", "label": "Page 4"}, {"src": "fdi-page-05.webp", "label": "Page 5"}, {"src": "fdi-page-06.webp", "label": "Page 6"}, {"src": "fdi-page-07.webp", "label": "Page 7"}, {"src": "fdi-page-08.webp", "label": "Page 8"}, {"src": "fdi-page-09.webp", "label": "Page 9"}, {"src": "fdi-page-10.webp", "label": "Page 10"}]</script>
+</div></div>
+</div>
+</article>
+<article class="showcase-card reveal">
 <div class="showcase-grid">
 <div class="showcase-copy">
 <p class="role-line">Editorial and communications support · Cornell RJEF</p>
 <h3>RJEF Communications Portfolio</h3>
 <p>Current work for the Center for Racial Justice and Equitable Futures combines institutional writing, visual adaptation, content scheduling, and channel-specific social media management.</p>
-<ul><li>Drafted and edited a press release announcing the Graduate Student Research Grantees. The release has been approved and is scheduled for publication in the Cornell Chronicle; the live link will be added once published.</li><li>Developed and managed LinkedIn and Instagram content aligned with the Center's mission, including Juneteenth-related content and a Fourth of July reflection on Frederick Douglass.</li><li>Adapted visual assets to RJEF branding and revised captions for the conventions of each platform.</li></ul>
-<div class="publication-status"><strong>Graduate Student Research Grantees announcement</strong>Approved for publication. Cornell Chronicle link forthcoming.</div>
+<ul><li>Wrote the 2026 Graduate Student Research Grantees press release, which was refined through review by my supervisor and Center directors and published by the Cornell Chronicle on July 13, 2026.</li><li>Developed and managed LinkedIn and Instagram content aligned with the Center's mission, including Juneteenth-related content and a Fourth of July reflection on Frederick Douglass.</li><li>Adapted visual assets to RJEF branding and revised captions for the conventions of each platform.</li></ul>
+<div class="publication-status"><span class="publication-label">Published writing sample · Cornell Chronicle</span><strong>Center for Racial Justice and Equitable Futures funds 2026 graduate student research projects</strong><p>By Mahasti Yuanita · July 13, 2026 · Finalized through supervisory and director review</p><a href="https://news.cornell.edu/stories/2026/07/center-racial-justice-and-equitable-futures-funds-2026-graduate-student-research" rel="noopener noreferrer" target="_blank">Read the published article ↗</a></div>
 </div>
 <div class="showcase-visual rjef-visual"><div><img alt="RJEF Instagram post: A Fourth of July Reflection featuring Frederick Douglass" src="IG_RJEF.png"/><p class="image-caption">Recent Instagram work: a Fourth of July reflection on Frederick Douglass, designed and written for RJEF's racial justice focus.</p></div></div>
 </div>
@@ -808,9 +912,9 @@ img, svg { max-width: 100%; display: block; }
 <article class="showcase-card reveal">
 <div class="showcase-grid text-wide">
 <div class="showcase-copy">
-<p class="role-line">Confidential experience · Recreated workflow only</p>
+<p class="role-line">International virtual-event operations · Workflow summary</p>
 <h3>Virtual International Event Operations</h3>
-<p>I supported large virtual meetings involving G20 participants and senior international stakeholders through Zoom and Webex. The original recordings and participant materials are confidential, so this portfolio presents the operating workflow rather than the underlying files.</p>
+<p>Based on my experience supporting large international virtual meetings through Zoom and Webex, this sample summarizes the end-to-end workflow I use to prepare, produce, and close an event.</p>
 <ul><li>Coordinated host and co-host responsibilities, panelist access, participant permissions, and breakout rooms.</li><li>Prepared run-of-show documents, holding slides, pre-event music, speaker transitions, and break visuals.</li><li>Monitored the live room, managed technical issues, and coordinated follow-up after the meeting.</li></ul>
 </div>
 <div class="workflow-panel">
@@ -822,16 +926,16 @@ img, svg { max-width: 100%; display: block; }
 <div class="workflow-step"><b>4</b><div><strong>Live moderation</strong><span>Admit participants, support speakers, monitor chat, and resolve issues.</span></div></div>
 <div class="workflow-step"><b>5</b><div><strong>Close and follow-up</strong><span>Capture decisions, distribute approved materials, and document lessons.</span></div></div>
 </div>
-<div class="confidential-note">G20 recordings and internal event materials are intentionally not included. A redacted checklist can be shared privately if authorized.</div>
+
 </div>
 </div>
 </article>
 <article class="showcase-card reveal">
 <div class="showcase-grid">
 <div class="showcase-copy">
-<p class="role-line">Public output from restricted data work · Individual byline</p>
+<p class="role-line">Published data-analysis work · Individual byline</p>
 <h3>Data Cleaning and Administrative Tracking</h3>
-<p>Many upstream datasets and working files from my government role are restricted. The public end products below demonstrate how I converted daily market data into accurate, readable, and publication-ready reports.</p>
+<p>These published market reports demonstrate how I collected, standardized, checked, analyzed, and translated daily financial-market data into accurate, readable, and publication-ready briefs.</p>
 <ul><li>Collected, standardized, checked, and summarized market indicators across equities, currencies, commodities, and global developments.</li><li>Validated dates, units, percentage changes, source attribution, narrative consistency, and chart presentation.</li><li>Produced concise daily briefs under time-sensitive publication deadlines; the attached examples carry my individual byline.</li></ul>
 <div class="public-evidence-strip"><article><strong>10 Feb 2025</strong><span>Tariffs, global markets, IHSG, and rupiah</span></article><article><strong>21 Feb 2025</strong><span>Asian technology optimism and rupiah appreciation</span></article><article><strong>6 Mar 2025</strong><span>IHSG gains and global bond-market pressure</span></article></div>
 <div class="sample-actions"><a class="button button-primary" href="https://www.ekon.go.id/publikasi/pasar-harian" rel="noopener noreferrer" target="_blank">View published series</a><a class="button button-ghost" href="Market_Report_2025-02-10.pdf" target="_blank">Feb 10 PDF</a><a class="button button-ghost" href="Market_Report_2025-02-21.pdf" target="_blank">Feb 21 PDF</a><a class="button button-ghost" href="Market_Report_2025-03-06.pdf" target="_blank">Mar 6 PDF</a></div>
@@ -848,24 +952,16 @@ img, svg { max-width: 100%; display: block; }
 </div></div>
 </div>
 </article>
-<article class="showcase-card reveal">
-<div class="confidential-card">
-<p class="role-line" style="color:var(--gold)">International policy briefing · Controlled-access work</p>
-<h3>G20, OECD, IMF, and multilateral briefing samples</h3>
-<p>I prepared and supported high-level briefing materials, proposed talking points, background notes, delegation coordination, and meeting preparation involving the G20, OECD accession process, IMF, World Bank Group, and other international counterparts. Many original files contain restricted government information and are therefore not hosted in this public portfolio.</p>
-<div class="private-sample"><span>Executive talking points</span><span>Meeting background briefs</span><span>Delegation coordination</span><span>Follow-up and action tracking</span></div>
-<div class="confidential-note">A temporarily authorized IMF talking-point sample was reviewed for this portfolio update but is deliberately excluded from the downloadable website. Approved excerpts may be shared privately through controlled access and removed after review.</div>
-</div>
-</article>
+
 <article class="showcase-card reveal">
 <div class="showcase-grid">
 <div class="showcase-copy">
 <p class="role-line">Collaborative government publication · Public sample</p>
 <h3>Investor Relations Unit Economic and Policy Update</h3>
-<p>A 50-slide public presentation book communicating global economic conditions, Indonesia's macroeconomic performance, fiscal and structural policies, investment climate, and priority reforms.</p>
+<p>Selected slides from the May 2025 public presentation book communicating global economic conditions, Indonesia's macroeconomic performance, fiscal and structural policies, investment climate, and priority reforms.</p>
 <ul><li>Supported economic analysis, compilation, narrative development, data verification, editing, and quality review.</li><li>Translated technical economic material into structured visual briefings for external stakeholders.</li><li>Worked within an institutional publication process requiring accuracy, source control, and supervisor approval.</li></ul>
-<div class="sample-actions"><a class="button button-primary" href="https://www.ekon.go.id/publikasi/iru" rel="noopener noreferrer" target="_blank">View IRU publications</a><a class="button button-ghost" href="IRU_May_2025.pdf" target="_blank">Open May 2025 PDF</a></div>
-<span class="swipe-hint">Swipe through all 50 slides</span>
+<div class="sample-actions"><a class="button button-primary" href="https://www.ekon.go.id/publikasi/iru" rel="noopener noreferrer" target="_blank">View IRU publications</a></div>
+<span class="swipe-hint">Swipe through slides 1–48, then slide 50</span>
 </div>
 <div class="showcase-visual"><div aria-label="Investor Relations Unit presentation" class="document-carousel" tabindex="0">
 <div class="document-stage">
@@ -874,14 +970,14 @@ img, svg { max-width: 100%; display: block; }
 <button aria-label="Next page" class="carousel-button next" type="button">›</button>
 </div>
 <div class="carousel-footer"><span class="carousel-caption"></span><span class="carousel-counter"></span></div>
-<script class="carousel-data" type="application/json">[{"src": "iru-slide-01.webp", "label": "Slide 1"}, {"src": "iru-slide-02.webp", "label": "Slide 2"}, {"src": "iru-slide-03.webp", "label": "Slide 3"}, {"src": "iru-slide-04.webp", "label": "Slide 4"}, {"src": "iru-slide-05.webp", "label": "Slide 5"}, {"src": "iru-slide-06.webp", "label": "Slide 6"}, {"src": "iru-slide-07.webp", "label": "Slide 7"}, {"src": "iru-slide-08.webp", "label": "Slide 8"}, {"src": "iru-slide-09.webp", "label": "Slide 9"}, {"src": "iru-slide-10.webp", "label": "Slide 10"}, {"src": "iru-slide-11.webp", "label": "Slide 11"}, {"src": "iru-slide-12.webp", "label": "Slide 12"}, {"src": "iru-slide-13.webp", "label": "Slide 13"}, {"src": "iru-slide-14.webp", "label": "Slide 14"}, {"src": "iru-slide-15.webp", "label": "Slide 15"}, {"src": "iru-slide-16.webp", "label": "Slide 16"}, {"src": "iru-slide-17.webp", "label": "Slide 17"}, {"src": "iru-slide-18.webp", "label": "Slide 18"}, {"src": "iru-slide-19.webp", "label": "Slide 19"}, {"src": "iru-slide-20.webp", "label": "Slide 20"}, {"src": "iru-slide-21.webp", "label": "Slide 21"}, {"src": "iru-slide-22.webp", "label": "Slide 22"}, {"src": "iru-slide-23.webp", "label": "Slide 23"}, {"src": "iru-slide-24.webp", "label": "Slide 24"}, {"src": "iru-slide-25.webp", "label": "Slide 25"}, {"src": "iru-slide-26.webp", "label": "Slide 26"}, {"src": "iru-slide-27.webp", "label": "Slide 27"}, {"src": "iru-slide-28.webp", "label": "Slide 28"}, {"src": "iru-slide-29.webp", "label": "Slide 29"}, {"src": "iru-slide-30.webp", "label": "Slide 30"}, {"src": "iru-slide-31.webp", "label": "Slide 31"}, {"src": "iru-slide-32.webp", "label": "Slide 32"}, {"src": "iru-slide-33.webp", "label": "Slide 33"}, {"src": "iru-slide-34.webp", "label": "Slide 34"}, {"src": "iru-slide-35.webp", "label": "Slide 35"}, {"src": "iru-slide-36.webp", "label": "Slide 36"}, {"src": "iru-slide-37.webp", "label": "Slide 37"}, {"src": "iru-slide-38.webp", "label": "Slide 38"}, {"src": "iru-slide-39.webp", "label": "Slide 39"}, {"src": "iru-slide-40.webp", "label": "Slide 40"}, {"src": "iru-slide-41.webp", "label": "Slide 41"}, {"src": "iru-slide-42.webp", "label": "Slide 42"}, {"src": "iru-slide-43.webp", "label": "Slide 43"}, {"src": "iru-slide-44.webp", "label": "Slide 44"}, {"src": "iru-slide-45.webp", "label": "Slide 45"}, {"src": "iru-slide-46.webp", "label": "Slide 46"}, {"src": "iru-slide-47.webp", "label": "Slide 47"}, {"src": "iru-slide-48.webp", "label": "Slide 48"}, {"src": "iru-slide-49.webp", "label": "Slide 49"}, {"src": "iru-slide-50.webp", "label": "Slide 50"}]</script>
+<script class="carousel-data" type="application/json">[{"src": "iru-slide-01.webp", "label": "Slide 1"}, {"src": "iru-slide-02.webp", "label": "Slide 2"}, {"src": "iru-slide-03.webp", "label": "Slide 3"}, {"src": "iru-slide-04.webp", "label": "Slide 4"}, {"src": "iru-slide-05.webp", "label": "Slide 5"}, {"src": "iru-slide-06.webp", "label": "Slide 6"}, {"src": "iru-slide-07.webp", "label": "Slide 7"}, {"src": "iru-slide-08.webp", "label": "Slide 8"}, {"src": "iru-slide-09.webp", "label": "Slide 9"}, {"src": "iru-slide-10.webp", "label": "Slide 10"}, {"src": "iru-slide-11.webp", "label": "Slide 11"}, {"src": "iru-slide-12.webp", "label": "Slide 12"}, {"src": "iru-slide-13.webp", "label": "Slide 13"}, {"src": "iru-slide-14.webp", "label": "Slide 14"}, {"src": "iru-slide-15.webp", "label": "Slide 15"}, {"src": "iru-slide-16.webp", "label": "Slide 16"}, {"src": "iru-slide-17.webp", "label": "Slide 17"}, {"src": "iru-slide-18.webp", "label": "Slide 18"}, {"src": "iru-slide-19.webp", "label": "Slide 19"}, {"src": "iru-slide-20.webp", "label": "Slide 20"}, {"src": "iru-slide-21.webp", "label": "Slide 21"}, {"src": "iru-slide-22.webp", "label": "Slide 22"}, {"src": "iru-slide-23.webp", "label": "Slide 23"}, {"src": "iru-slide-24.webp", "label": "Slide 24"}, {"src": "iru-slide-25.webp", "label": "Slide 25"}, {"src": "iru-slide-26.webp", "label": "Slide 26"}, {"src": "iru-slide-27.webp", "label": "Slide 27"}, {"src": "iru-slide-28.webp", "label": "Slide 28"}, {"src": "iru-slide-29.webp", "label": "Slide 29"}, {"src": "iru-slide-30.webp", "label": "Slide 30"}, {"src": "iru-slide-31.webp", "label": "Slide 31"}, {"src": "iru-slide-32.webp", "label": "Slide 32"}, {"src": "iru-slide-33.webp", "label": "Slide 33"}, {"src": "iru-slide-34.webp", "label": "Slide 34"}, {"src": "iru-slide-35.webp", "label": "Slide 35"}, {"src": "iru-slide-36.webp", "label": "Slide 36"}, {"src": "iru-slide-37.webp", "label": "Slide 37"}, {"src": "iru-slide-38.webp", "label": "Slide 38"}, {"src": "iru-slide-39.webp", "label": "Slide 39"}, {"src": "iru-slide-40.webp", "label": "Slide 40"}, {"src": "iru-slide-41.webp", "label": "Slide 41"}, {"src": "iru-slide-42.webp", "label": "Slide 42"}, {"src": "iru-slide-43.webp", "label": "Slide 43"}, {"src": "iru-slide-44.webp", "label": "Slide 44"}, {"src": "iru-slide-45.webp", "label": "Slide 45"}, {"src": "iru-slide-46.webp", "label": "Slide 46"}, {"src": "iru-slide-47.webp", "label": "Slide 47"}, {"src": "iru-slide-48.webp", "label": "Slide 48"}, {"src": "iru-slide-50.webp", "label": "Slide 50"}]</script>
 </div></div>
 </div>
 </article>
 </div>
 <div class="research-note reveal" style="margin-top:34px">
-<div><span class="feature-kicker">Responsible sharing</span><h3>Public evidence where possible. Confidentiality where required.</h3></div>
-<p>This website distinguishes individual, collaborative, forthcoming, and restricted work. It includes only public or authorized files, omits confidential recordings and government briefs, and explains the underlying workflow when the original evidence cannot be shared.</p>
+<div><span class="feature-kicker">Clear contribution labels</span><h3>Independent work first, collaborative work clearly explained.</h3></div>
+<p>The portfolio identifies which samples were completed independently and which were produced through supervisory or institutional review. Only public, academic, or approved materials are included.</p>
 </div>
 </div>
 </section>
@@ -902,7 +998,7 @@ img, svg { max-width: 100%; display: block; }
 </div>
 </div>
 <div class="container workstyle-grid">
-<article class="workstyle-card reveal"><span>01</span><h3>Clarify</h3><p>Confirm the goal, audience, owner, deadline, and level of confidentiality.</p></article>
+<article class="workstyle-card reveal"><span>01</span><h3>Clarify</h3><p>Confirm the goal, audience, owner, deadline, and required level of access.</p></article>
 <article class="workstyle-card reveal"><span>02</span><h3>Organize</h3><p>Create a simple work plan, naming structure, and visible status tracker.</p></article>
 <article class="workstyle-card reveal"><span>03</span><h3>Deliver</h3><p>Complete the task accurately, communicate progress, and meet the agreed deadline.</p></article>
 <article class="workstyle-card reveal"><span>04</span><h3>Improve</h3><p>Capture lessons so the next version is faster, clearer, and easier to maintain.</p></article>
@@ -920,6 +1016,7 @@ img, svg { max-width: 100%; display: block; }
 </div>
 <div class="contact-status">
 <span><i></i> Available to begin soon</span>
+<span>Available October 22 &amp; 23, 2026, 8:00–10:00 a.m., plus setup and debrief</span>
 <span>Flexible evenings and weekends</span>
 <span>Available through May 2027; open to discussing opportunities beyond graduation</span>
 </div>
